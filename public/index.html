@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>Practica 2</title>
+        <meta name="Viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+        <link rel="stylesheet" href="style.css">
+        <script src="main.js" defer></script>
+    </head>
+    <body class="w3-container w3-blue">
+        <div class="w3-center w3-green w3-round-large">
+            <h1>Carta Secreta</h1>
+            <h5>Luis Fernando De León Silva A01754574</h5>
+        </div>
+        <div class="w3-center w3-panel w3-black w3-round-large">
+            <p> Has ganado <span id="partidas_ganadas">0</span> veces. </p>
+            <p> Has perdido <span id="partidas_perdidas">0</span> veces. </p>
+        </div>
+        <div class="w3-panel w3-center w3-side">
+            <img id="cartaSecretaID" class="carta" src="cards/BACK.svg">
+            <img id="cartaMostradaID" class="carta" src="cards/H_13.svg">
+            <p id="pregunta" style="display: block;"> ¿Cómo consideras que es la carta secreta respecto a la carta mostrada? </p>
+            <p id="menorGanador" style="display: none;"> En efecto, la carta mostrada es menor que la carta secreta 😀 </p>
+            <p id="menorPerdedor" style="display: none;"> Lo siento, la carta mostrada no es menor que la carta secreta 😡 </p>
+            <p id="mayorGanador" style="display: none;"> En efecto, la carta mostrada es mayor que la carta secreta 😀 </p>
+            <p id="mayorPerdedor" style="display: none;"> Lo siento, la carta mostrada no es mayor que la carta secreta 😡 </p>
+            <p id="igualGanador" style="display: none;"> En efecto, la carta mostrada es igual que la carta secreta 😀 </p>
+            <p id="igualPerdedor" style="display: none;"> Lo siento, la carta mostrada no es igual que la carta secreta 😡 </p>
+            <p id="final" style="display: none;"> ¡No hay más cartas! </p>
+            <p id="boton" class="w3-center w3-side">
+                <button onclick="lower();" class="w3-button w3-green w3-round-large">Menor</button>
+                <button onclick="equal();" class="w3-button w3-green w3-round-large">Igual</button>
+                <button onclick="higher();" class="w3-button w3-green w3-round-large">Mayor</button>
+            </p>
+        </div>
+        <div id="reinicio" class="w3-panel w3-center" style="display: none;">
+            <a class="w3-button w3-green w3-round-large" href="">Reiniciar Juego</a>
+        </div>
+        <div id="continuar" class="w3-panel w3-center" style="display: none;">
+            <button onclick="iniciaJuego();" class="w3-button w3-green w3-round-large" href="">Continuar</button>
+        </div>
+    </body>
+</html>
