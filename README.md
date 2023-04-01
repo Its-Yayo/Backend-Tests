@@ -5,7 +5,7 @@ The client app is a card game made my me for a uni assignment. All tests will be
 
 If you wanna store this repo in your locahost, make sure you type the following commands. 
 ```
-$ git clone depth=1 https://github.com/Its-Yayo/Backend-Tests.git
+$ git clone https://github.com/Its-Yayo/Backend-Tests.git
 $ cd Backend-Tests
 ```
 
